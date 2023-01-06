@@ -38,6 +38,9 @@
 I would recommend splitting tests into fast unit tests that don't require networks up and running vs integration tests that rely on the networks.
 That way it can be easy and fast to run unit tests and perform first checks, then run integration tests later when ready for full checks.
 
+- Also about tests, would be great if there was some kind of config file to specify different tests against different channels to test for more variations without repeating code (instead of hardcoded params in current tests.) 
+Would allow to add more variations to the test suite without much more code.
+
 - Little insignificant detail, just reporting it here cause I found it annoying in my environment: the repos are named `ui` and `sdk`, very common names that a dev could want to rename locally.
 Would be nice if the scripts didn't assume the repo name like here in the Makefile:
 ```
